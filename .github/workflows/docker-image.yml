@@ -33,7 +33,7 @@ jobs:
         # Path to the Dockerfile
         file: ./Dockerfile
         push: true
-        tags: ${{ secrets.DOCKERHUB_USERNAME }}/docker-node-demo:lastest
+        tags: ${{ secrets.DOCKER_HUB_USERNAME }}/saucy-site:latest
         # Sets the target stage to build
         target: prod
 
