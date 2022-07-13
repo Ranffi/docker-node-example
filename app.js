@@ -23,9 +23,9 @@ app.use(express.static('public'));
 
 seed();
 
-app.get('/'), async (_req, res) => {
+app.get('/', async (_req, res) => {
     res.redirect('/sauces')
-}
+})
 
 app.get('/sauces', async (_req, res) => {
     const sauces= await Sauce.findAll()
